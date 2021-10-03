@@ -41,6 +41,11 @@ export default function writeToDOM(
       }
 
       saveToLocalStorage("groceryArrayKey", theArrayIAmGoingToCreateHTMLFrom);
+
+      writeToDOM(
+        domElementIAmGoingToPutHTMLInto,
+        theArrayIAmGoingToCreateHTMLFrom
+      );
     };
   });
 }
